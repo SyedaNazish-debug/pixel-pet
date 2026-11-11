@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5c64c">
+    <title>Pixel Pet Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <p class="eyebrow">POCKET PAL · NO. 001</p>
+        <h1>Pixel Pet</h1>
+      </header>
+
+      <section class="console" aria-label="Pixel Pet game">
+        <div class="screen">
+          <div class="screen-topline">
+            <span class="screen-label">LIL' GARDEN</span>
+            <span class="heart-meter" aria-label="Pet heart">♥</span>
+          </div>
+
+          <div class="pet-stage">
+            <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+            <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+            <div class="pet" id="pet" role="img" aria-label="Your pixel pet, Pip"></div>
+            <div class="pet-shadow" aria-hidden="true"></div>
+          </div>
+
+          <div class="mood-card" aria-live="polite">
+            <span class="mood-dot" aria-hidden="true"></span>
+            <span>MOOD:</span>
+            <strong id="mood">Happy</strong>
+            <span class="mood-message" id="mood-message">Ready for a little adventure!</span>
+          </div>
+
+          <section class="stats" aria-label="Pet stats">
+            <div class="stat-row" data-stat="hunger">
+              <span class="stat-icon" aria-hidden="true">🍓</span>
+              <span class="stat-name">Hunger</span>
+              <div class="stat-track" role="progressbar" aria-label="Hunger" aria-valuemin="0" aria-valuemax="100">
+                <span class="stat-fill"></span>
+              </div>
+              <span class="stat-value">80</span>
+            </div>
+            <div class="stat-row" data-stat="happiness">
+              <span class="stat-icon" aria-hidden="true">♪</span>
+              <span class="stat-name">Happy</span>
+              <div class="stat-track" role="progressbar" aria-label="Happiness" aria-valuemin="0" aria-valuemax="100">
+                <span class="stat-fill"></span>
+              </div>
+              <span class="stat-value">80</span>
+            </div>
+            <div class="stat-row" data-stat="energy">
+              <span class="stat-icon" aria-hidden="true">⚡</span>
+              <span class="stat-name">Energy</span>
+              <div class="stat-track" role="progressbar" aria-label="Energy" aria-valuemin="0" aria-valuemax="100">
+                <span class="stat-fill"></span>
+              </div>
+              <span class="stat-value">80</span>
+            </div>
+            <div class="stat-row" data-stat="cleanliness">
+              <span class="stat-icon" aria-hidden="true">✿</span>
+              <span class="stat-name">Clean</span>
+              <div class="stat-track" role="progressbar" aria-label="Cleanliness" aria-valuemin="0" aria-valuemax="100">
+                <span class="stat-fill"></span>
+              </div>
+              <span class="stat-value">80</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="console-controls">
+          <p class="control-hint">WHAT SHOULD PIP DO?</p>
+          <div class="actions">
+            <button class="action-button feed-button" type="button" data-action="feed">
+              <span class="button-icon" aria-hidden="true">♥</span>
+              <span>Feed</span>
+            </button>
+            <button class="action-button play-button" type="button" data-action="play">
+              <span class="button-icon" aria-hidden="true">♫</span>
+              <span>Play</span>
+            </button>
+            <button class="action-button sleep-button" type="button" data-action="sleep">
+              <span class="button-icon" aria-hidden="true">Zz</span>
+              <span>Sleep</span>
+            </button>
+            <button class="action-button clean-button" type="button" data-action="clean">
+              <span class="button-icon" aria-hidden="true">✿</span>
+              <span>Clean</span>
+            </button>
+          </div>
+          <p class="save-note"><span aria-hidden="true">●</span> YOUR LITTLE FRIEND SAVES AUTOMATICALLY</p>
+        </div>
+      </section>
+
+      <footer class="game-footer">A tiny friend for your everyday ♡</footer>
+    </main>
+  </body>
+</html>
