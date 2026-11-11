@@ -93,6 +93,8 @@ The project is hosted using GitHub Pages.
 Live Website: https://syedanazish-debug.github.io/pixel-pet/
 
 Updates pushed to the configured "main" branch are automatically deployed.
+<img width="720" height="1326" alt="IMG_20261111_182412" src="https://github.com/user-attachments/assets/9aa4cce7-e779-4392-a7ca-eb02ae692669" />
+
 
 Author
 
